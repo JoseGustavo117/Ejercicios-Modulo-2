@@ -19,6 +19,8 @@ const paletaC = "c4f2"
 const ChicleC = "gt74" 
 const galletaC = "l3k8"
 const mazapanC = "1234"
+const carameloC = "xf11"
+const mentitaC = "dn16"
 
 //Precios
 const chocolateP = 12.50
@@ -26,7 +28,8 @@ const paletaP = 5.75
 const chicleP = 4.25
 const galletaP = 9.10
 const mazapanP = 4
-
+const carameloP = 1.5
+const mentitaP = 1.10   
 
 
 
@@ -130,7 +133,30 @@ switch (codigo) {
         }
     break;
 
+    case "xf11": //1.5
+        if (monto >= carameloP){
+            var dulce = "caramelo";
+            var cambio = monto - carameloP;
+            exito();
+        }
+        else{
+            dineroInsuf();
+            devolver();
+        }
+    break;
 
+    case "dn16":
+        if (monto >= mentitaP){
+            var dulce = "mentita";
+            var cambio = monto - mentitaP;
+            exito();
+        }
+        else{
+            dineroInsuf();
+            devolver();
+        }
+    break;
+    
     default:
         error();
         devolver();
