@@ -246,8 +246,3 @@ switch (iniciar) {
 //Gracias por haberte usado tu tiempo en esto :)
 console.log("Gracias por haberte tomado parte de tu tiempo en este código. "
             + "Has hecho feliz a alguien :')\n")
-
-
-
-
-
